@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Andva developers"
+        android:gravity="center"
+        android:fontFamily="@font/audiowide"
+        android:textColor="#1976D2"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:textColor="#771313"
+        android:layout_height="50dp"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/typehere"
+        android:hint="Enter Your Name"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:text="Add"
+            android:backgroundTint="#1976D2"
+            android:id="@+id/addbtn"/>
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="0dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:text="Clear"
+            android:backgroundTint="#1976D2"
+            android:id="@+id/resetbtn"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lists"
+        tools:listitem="@layout/list_row_main"/>
+</LinearLayout>
